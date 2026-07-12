@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ofertas e Encartes — SuperFácil Atacado</title>
+  <meta name="description" content="Escolha o estado e a loja SuperFácil Atacado mais perto de você e confira o encarte de ofertas da semana.">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-sf sticky-top py-2">
+      <div class="container">
+        <a class="navbar-brand py-1" href="index.html">
+          <img src="img/logo_superfacil.png" alt="SuperFácil Atacado" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="ofertas.html">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link" href="lojas.html">Lojas</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre nós</a></li>
+            <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe com a gente</a></li>
+          </ul>
+          <a href="lojas.html" class="btn-tag">Ver lojas <i class="bi bi-geo-alt-fill"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== BUSCA DE ENCARTE ===== -->
+    <section class="hero-sf py-5" aria-labelledby="busca-title">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <p class="eyebrow mb-3">Ofertas e encartes</p>
+          <h1 id="busca-title" class="mb-3">Encontre as melhores ofertas</h1>
+          <p class="fs-5 mx-auto" style="max-width: 560px; color: rgba(255,255,255,0.85);">
+            Escolha o estado e a loja SuperFácil mais perto de você para ver o encarte de ofertas atualizado.
+          </p>
+        </div>
+
+        <div class="search-card mx-auto">
+          <form id="formEncarte">
+           <div class="row g-3 align-items-end">
+
+  <div class="col-md-2">
+    <label for="estado" class="form-label fw-semibold">Escolha o estado</label>
+    <select id="estado" class="form-select form-select-lg" required>
+      <option value="" selected disabled>Selecione o estado</option>
+      <option value="RN">Rio Grande do Norte</option>
+      <option value="PB">Paraíba</option>
+    </select>
+  </div>
+
+  <div class="col-md-3">
+    <label for="loja" class="form-label fw-semibold">Escolha a loja</label>
+    <select id="loja" class="form-select form-select-lg" required disabled>
+      <option value="" selected disabled>Selecione o estado primeiro</option>
+    </select>
+  </div>
+
+  <div class="col-md-5">
+    <label for="encarte" class="form-label fw-semibold">Escolha o encarte</label>
+    <select id="encarte" class="form-select form-select-lg" required disabled>
+      <option value="" selected disabled>Selecione a loja primeiro</option>
+    </select>
+  </div>
+
+  <div class="col-md-2 d-grid">
+    <button type="submit" id="btnVerEncarte" class="btn-tag btn-tag-lg justify-content-center" disabled>
+      Ver encarte <i class="bi bi-file-earmark-pdf-fill"></i>
+    </button>
+  </div>
+
+</div>
+    </section>
+
+    <!-- ===== RESULTADO DO ENCARTE ===== -->
+    <section class="py-5 bg-sf-cream" aria-labelledby="resultado-title">
+      <div class="container py-4">
+
+        <!-- Estado vazio: nada selecionado ainda -->
+        <div id="encartePlaceholder" class="empty-state text-center mx-auto">
+          <div class="empty-state-icon"><i class="bi bi-file-earmark-text"></i></div>
+          <h2 id="resultado-title" class="h4 mb-2">Selecione o estado, a loja e o encarte acima</h2>
+          <p class="text-muted mb-0">O encarte escolhido vai aparecer aqui.</p>
+        </div>
+
+        <!-- Resultado: encarte carregado -->
+        <div id="encarteResultado" class="d-none">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
+            <div>
+              <p class="section-eyebrow mb-1" id="lojaSelecionadaNome">—</p>
+              <h2 class="h3 mb-0" id="encarteAtualNome">—</h2>
+              <p class="text-muted mb-0 small" id="encarteAtualValidade">—</p>
+            </div>
+            <div class="d-flex gap-2">
+              <a id="linkAbrirPdf" href="#" target="_blank" rel="noopener" class="btn-tag">
+                Abrir em nova aba <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a id="linkBaixarPdf" href="#" download class="btn-tag-outline-dark">
+                Baixar PDF <i class="bi bi-download"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="pdf-frame-wrap">
+            <iframe id="encarteFrame" title="Encarte de ofertas" src="" loading="lazy"></iframe>
+          </div>
+
+          <p class="text-muted small mt-3 mb-0">
+            <i class="bi bi-info-circle me-1"></i>
+            Encartes ilustrativos para fins do projeto acadêmico — em produção, cada loja teria seus PDFs reais de ofertas.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer-sf pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h6>SuperFácil Atacado</h6>
+          <p class="small mb-3">Fundado em 2012 pelo Grupo Nordestão, um dos maiores centros comerciais do RN.</p>
+          <div class="d-flex gap-2">
+            <a href="https://www.facebook.com/superfacilatacado/" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/superfacilatacado/" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/superfacilrn" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com/channel/UCYBK_cq08c7jpj-2fOXljRQ" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Navegação</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html">Início</a></li>
+            <li class="mb-2"><a href="ofertas.html">Ofertas</a></li>
+            <li class="mb-2"><a href="lojas.html">Lojas</a></li>
+            <li class="mb-2"><a href="sobre.html">Sobre nós</a></li>
+            <li class="mb-2"><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>Atendimento</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="bi bi-whatsapp me-2"></i>(84) 8143-0000</li>
+            <li class="mb-2"><i class="bi bi-clock me-2"></i>Seg-Sáb: 07h-22h</li>
+            <li class="mb-2"><i class="bi bi-clock me-2"></i>Dom: 07h-18h</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6>Institucional</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#">Proteção de Dados Pessoais</a></li>
+            <li class="mb-2"><a href="#">Relatório de Transparência Salarial</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light border-opacity-25 mt-4 mb-3">
+      <p class="small text-center mb-0" style="color: rgba(255,255,255,0.6);">&copy; 2026 SuperFácil Atacado. Projeto acadêmico de redesign — UFPB/DEMID.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/encartes.js"></script>
+<script src="js/ofertas.js"></script>
+</body>
+</html>
