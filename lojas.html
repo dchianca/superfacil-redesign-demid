@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nossas Lojas — SuperFácil Atacado</title>
+  <meta name="description" content="Encontre a loja SuperFácil Atacado mais próxima de você no Rio Grande do Norte e na Paraíba.">
+<!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-sf sticky-top py-2">
+      <div class="container">
+        <a class="navbar-brand py-1" href="index.html">
+          <img src="img/logo_superfacil.png" alt="SuperFácil Atacado" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="lojas.html">Lojas</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre nós</a></li>
+            <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe com a gente</a></li>
+          </ul>
+          <a href="ofertas.html" class="btn-tag">Ver ofertas <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO LOJAS ===== -->
+    <section class="hero-sf py-5" aria-labelledby="lojas-hero-title">
+      <div class="container py-4 text-center">
+        <p class="eyebrow mb-3">Distribuição de Rede</p>
+        <h1 id="lojas-hero-title" class="mb-3">Encontre sua loja SuperFácil</h1>
+        <p class="fs-5 mx-auto mb-0" style="max-width: 600px; color: rgba(255,255,255,0.85);">
+          Estamos estrategicamente localizados para atender você com o melhor mix do atacado. Escolha a unidade mais próxima.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CONTEÚDO DAS LOJAS ===== -->
+    <section class="py-5 bg-sf-cream">
+      <div class="container py-4">
+        
+        <!-- Tabs para filtrar por Estado -->
+        <ul class="nav nav-pills justify-content-center mb-5" id="lojas-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active fw-bold px-4 rounded-pill" id="rn-tab" data-bs-toggle="pill" data-bs-target="#rn" type="button" role="tab" aria-controls="rn" aria-selected="true" style="color: var(--sf-blue);">Rio Grande do Norte (RN)</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fw-bold px-4 rounded-pill" id="pb-tab" data-bs-toggle="pill" data-bs-target="#pb" type="button" role="tab" aria-controls="pb" aria-selected="false" style="color: var(--sf-blue);">Paraíba (PB)</button>
+          </li>
+        </ul>
+
+        <!-- Conteúdo das Tabs -->
+        <div class="tab-content" id="lojas-tabContent">
+          
+          <!-- Aba Rio Grande do Norte -->
+          <div class="tab-pane fade show active" id="rn" role="tabpanel" aria-labelledby="rn-tab" tabindex="0">
+            <div class="row g-4">
+              
+              <!-- Loja Emaús -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil Emaús</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>BR-101, Km 12 - Emaús, Parnamirim - RN</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>(84) 3615-4830</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-5.885119,-35.229404&z=16&t=m&hl=pt-BR&gl=US&mapclient=embed&cid=2730167906983375281" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+              <!-- Loja Rodoviária -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil Rodoviária</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>Av. Capitão-Mor Gouveia, 1234 - Cidade da Esperança, Natal - RN</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>(84) 3216-4832</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-5.81927,-35.236741&z=14&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=6719958662032744764" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+              <!-- Loja São Gonçalo -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil São Gonçalo</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>Av. Tomaz Landim, 500 - Jardim Lola, São Gonçalo do Amarante - RN</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>(84) 3615-4834</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-5.761581,-35.289007&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13401866507430386090" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+              <!-- Loja Moema Tinoco -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil Moema Tinoco</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>Av. Moema Tinoco da Cunha Lima - Pajuçara, Natal - RN</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>(84) 3000-0001</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-5.737158,-35.22683&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=8329273479150238507" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+              <!-- Loja Vale do Sol -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil Vale do Sol</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>Rua Vale do Sol - Nova Parnamirim, Parnamirim - RN</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>(84) 3615-4830</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-5.929321,-35.275315&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13055619880613866115" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+              <!-- Loja Nova Betânia -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil Nova Betânia</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>Bairro Nova Betânia, Mossoró - RN</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>0800 084 0120</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-5.177251,-37.368181&z=17&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=10822478652796148892" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+              <!-- Loja Alto de São Manoel -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil Alto de S. Manoel</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>Alto de São Manoel, Mossoró - RN</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>(84) 3300-0004</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-5.210848,-37.333015&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=11809313991457863657" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Aba Paraíba -->
+          <div class="tab-pane fade" id="pb" role="tabpanel" aria-labelledby="pb-tab" tabindex="0">
+            <div class="row g-4 justify-content-center">
+              
+              <!-- Loja João Pessoa -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card card-offer h-100 border-0 p-3 shadow-sm rounded-4">
+                  <div class="d-flex align-items-center mb-3 gap-3">
+                    <div class="chip-icon chip-icon--blue" style="width: 48px; height: 48px; font-size: 1.2rem;"><i class="bi bi-shop"></i></div>
+                    <h3 class="h5 mb-0" style="color: var(--sf-blue-dark);">SuperFácil João Pessoa</h3>
+                  </div>
+                  <div class="mb-3 flex-grow-1">
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-sf-red me-2"></i>Rod. BR-230, Km 14 - Água Fria, João Pessoa - PB</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-sf-blue me-2"></i>(83) 3264-9000</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-clock-fill text-sf-yellow me-2"></i>Seg-Sáb: 07h-22h | Dom: 07h-18h</p>
+                  </div>
+                  <a href="https://www.google.com/maps?ll=-7.16658,-34.860828&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=14162344416870903850" class="btn btn-outline-primary fw-semibold rounded-pill w-100">Ver no Mapa</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer-sf pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h6>SuperFácil Atacado</h6>
+          <p class="small mb-3">Fundado em 2012 pelo Grupo Nordestão, um dos maiores centros comerciais do RN.</p>
+          <div class="d-flex gap-2">
+            <a href="https://www.facebook.com/superfacilatacado/" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/superfacilatacado/" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/superfacilrn" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com/channel/UCYBK_cq08c7jpj-2fOXljRQ" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Navegação</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html">Início</a></li>
+            <li class="mb-2"><a href="ofertas.html">Ofertas</a></li>
+            <li class="mb-2"><a href="lojas.html">Lojas</a></li>
+            <li class="mb-2"><a href="sobre.html">Sobre nós</a></li>
+            <li class="mb-2"><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>Atendimento</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="bi bi-whatsapp me-2"></i>(84) 8143-0000</li>
+            <li class="mb-2"><i class="bi bi-clock me-2"></i>Seg-Sáb: 07h-22h</li>
+            <li class="mb-2"><i class="bi bi-clock me-2"></i>Dom: 07h-18h</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6>Institucional</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#">Proteção de Dados Pessoais</a></li>
+            <li class="mb-2"><a href="#">Relatório de Transparência Salarial</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light border-opacity-25 mt-4 mb-3">
+      <p class="small text-center mb-0" style="color: rgba(255,255,255,0.6);">&copy; 2026 SuperFácil Atacado. Projeto acadêmico de redesign — UFPB/DEMID.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
