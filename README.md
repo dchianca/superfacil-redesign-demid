@@ -177,8 +177,8 @@ superfacil-redesign-demid/
 
 ## 👨‍💻 Autores:
 
-**Danilo Chianca**
-**Lilian Gabriela**
+**Danilo Chianca,**
+**Lilian Gabriela e**
 **Samara Lima**
 
 Comunicação em Mídias Digitais
